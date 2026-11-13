@@ -9,6 +9,8 @@ three models, six product families, four variance-reduction techniques, MC Greek
 Heston calibration pipeline fed by **OptionMetrics IvyDB** (via WRDS). Every Monte Carlo
 estimator is validated against a closed-form or semi-analytic benchmark in the test-suite.
 
+📄 **Results summary (4 pages, PDF): [`report/results_summary.pdf`](report/results_summary.pdf)**
+
 The end-to-end question the project answers: *if two models agree on the at-the-money
 vanilla price, how much do they disagree on exotics?* - i.e. model risk from the volatility
 smile.
@@ -224,7 +226,7 @@ mc-option-pricing/
 ├── tests/                 # MC vs closed forms, calibration, data cleaning
 ├── data/sample/           # synthetic surface (safe to publish)
 ├── data/raw/              # OptionMetrics downloads (git-ignored)
-└── results/               # figures and tables used in this README
+├── results/               # figures and tables used in this README
 ```
 
 ---
