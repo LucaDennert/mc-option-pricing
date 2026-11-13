@@ -1,0 +1,21 @@
+# --- Licensed data: NEVER commit OptionMetrics / WRDS downloads ---
+data/raw/*
+!data/raw/.gitkeep
+.pgpass
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

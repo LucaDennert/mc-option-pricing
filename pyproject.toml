@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcpricer"
+version = "0.1.0"
+description = "Monte Carlo pricing of vanilla and exotic equity options (Black-Scholes, Heston, Merton) with variance reduction, RQMC and Heston calibration to OptionMetrics data."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Luca Dennert" }]
+keywords = ["monte carlo", "option pricing", "exotic options", "heston", "quasi monte carlo", "optionmetrics"]
+dependencies = ["numpy>=1.24", "scipy>=1.10", "pandas>=2.0"]
+
+[project.optional-dependencies]
+scripts = ["matplotlib>=3.7", "tabulate>=0.9"]
+wrds = ["wrds>=3.1"]
+dev = ["pytest>=7", "matplotlib>=3.7", "tabulate>=0.9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
